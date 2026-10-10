@@ -1,30 +1,30 @@
-﻿#include <iostream>
+#include <iostream>
 #include <windows.h>
 using namespace std;
 
-int main() {
+int main()
+{
+    SetConsoleOutputCP(1251);  
     SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-
-    int number;  
-
     cout << "Введіть номер студента: ";
+    int number;
     cin >> number;
-    switch (number) {
+    switch (number)
+    {
     case 1:
-        cout << "Студент №1: Іваненко І.В." << endl;
+        cout << "Студент №1: Іваненко І.Г." << endl;
         break;
     case 2:
-        cout << "Студент №2: Ткаченко Т.О." << endl;
+        cout << "Студент №2: Петренко П.Р." << endl;
         break;
     case 3:
-        cout << "Студент №3: Сидоренко С.П." << endl;
+        cout << "Студент №3:Сидоренко С.М." << endl;
         break;
     case 4:
         cout << "Студент №4: Коваленко О.М." << endl;
         break;
     case 5:
-        cout << "Студент №5: Шевченко А.В." << endl;
+        cout << "Студент №5: Шевченко А.С." << endl;
         break;
     default:
         cout << "Студента з таким номером немає у списку!" << endl;
